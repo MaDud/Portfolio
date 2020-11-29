@@ -122,7 +122,7 @@ header h2 {
     margin: 1rem 0;
 }
 
-.gallery {
+#projectsGallery {
     margin: 0;
     display: grid;
     grid-template-columns: 45% calc(10% - 2rem) 45%;
@@ -131,65 +131,137 @@ header h2 {
     grid-auto-flow: dense;
 }
 
-.gallery div {
-    background-color: var(--lightBgColor);
-}
-
-.gallery div:nth-of-type(even) {
-    background-color: var(--titleColor);
+#projectsGallery div:nth-of-type(even) {
     grid-column: span 2;
 }
 
-.gallery div:nth-of-type(3) {
+#projectsGallery div:nth-of-type(3) {
     grid-area: 2/3/3/4
 }
 
-.galleryDescription {
+.textBox {
     position: relative;
-    width: 95%;
+    width: 222%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 1rem;
-    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
 }
 
-.galleryDescription::after {
+.textBox.textBoxRight {
+    text-align: right;
+    justify-self: right;
+    flex-direction: row-reverse;
+}
+
+/*arrow */
+
+.textBox::after {
     content: "";
     position: absolute;
     border-top: 11rem solid transparent;
 	border-bottom: 11rem solid transparent;
     border-left: 3.5rem solid var(--lightBgColor);
     bottom: 0;
+    left: 45%;
+    transition: left 0.5s, opacity .5s ease-in-out;
+}
+
+.textBox:hover.textBox::after {
     left: 100%;
-    z-index: 10;
+    opacity: 0
 }
 
-.rightGalleryDescription.galleryDescription {
-    text-align: right;
-    justify-self: right
-}
-
-.rightGalleryDescription.galleryDescription::after {
+.textBoxRight::after {
     border-right: 3.5rem solid var(--lightBgColor);
     border-left: 0;
-    right: 100%;
-    left: auto
+    left: calc(55% - 3.5rem)
 }
 
-.galleryImg {
+.textBoxRight:hover.textBoxRight::after{
+    left: -3.5rem
+}
+
+/*box */
+.textBox::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    left: 45%;
+    transition: width 0.5s ease-in-out;
+    background-color: var(--lightBgColor);
+}
+
+.textBox:hover.textBox::before {
+    width: 55.2%
+}
+
+.textBoxRight::before {
+    left: auto;
+    right: 45%; 
+}
+
+/* button box */
+
+.textBox:hover > .buttonBox {
+    flex: 1;
+    animation: changeVisibility 0.6s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.buttonBox {
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+    position: relative;
+}
+
+.buttonBox button {
+    width: 10rem;
+    height: 3rem;
+}
+
+.description {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    background-color: var(--lightBgColor);
+}
+
+.projectClipping {
     background-size: cover;
     opacity: 0.8;
 }
 
-#rightImg {
+#project1 {
     background-image: url('./assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg');
 }
 
-#leftImg {
+#project2 {
     background-image: url('./assets/images/tran-mau-tri-tam-vGsf7HSWOU8-unsplash.jpg');
 }
 
+@keyframes changeVisibility {
+    0% {
+        visibility: visible;
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
 @media (max-width: 1500px) {
 
@@ -262,27 +334,27 @@ header h2 {
        padding: 3rem 1rem;
     }
 
-    .gallery {
+    #projectsGallery {
         grid-template-columns: 100%;
         grid-template-rows: repeat(4, 15rem);
         grid-auto-flow: unset;
         grid-gap: 0;
     }
 
-    .gallery div:nth-of-type(even) {
+    #projectsGallery div:nth-of-type(even) {
         background-color: var(--titleColor);
         grid-column: span 1;
     }
     
-    .gallery div:nth-of-type(3) {
+    #projectsGallery div:nth-of-type(3) {
         grid-area: auto
     }
 
-    .galleryDescription{
+    .description{
         width: 100%;
     }
 
-    .galleryDescription::after {
+    .description::after {
         content: "";
         position: absolute;
         border-top: 2rem solid var(--lightBgColor);
@@ -293,7 +365,7 @@ header h2 {
         left: auto
     }
 
-    .rightGalleryDescription.galleryDescription::after {
+    .descriptionRight.description::after {
         border-left: 5rem solid transparent;
         border-right: 5rem solid transparent;
         right: auto;
