@@ -15,7 +15,7 @@
 
 <body>
     <nav>            
-        <ul>
+        <ul id='menuList'>
             <li>
                 <a href="">O mnie</a>
             </li>
@@ -29,10 +29,10 @@
                 <a href="">Kontakt</a>
             </li>
         </ul>
+        <div id='menu'>
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
-    <div id='menu'>
-        <i class="fas fa-bars"></i>
-    </div>
     <header>
         <div>
             <h1>Marta Duda</h1>
@@ -44,7 +44,7 @@
         <h2>O mnie</h2>
         <div>
             <article>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime, praesentium officia quas nostrum dolorem atque aliquam tenetur neque necessitatibus dolor labore et, reprehenderit porro qui nulla cum sapiente quia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime, praesentium officia quas nostrum dolorem atque aliquam tenetur neque necessitatibus dolor labore et, reprehenderit porro qui nulla cum sapiente quia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae molestiae dolores dolore, natus cupiditate enim quam voluptates ut doloremque debitis? Maxime temporibus non rerum? Ut, similique. Consequuntur dicta doloremque est?</p>
             </article>
             <figure>
                 <img src="" alt="">
@@ -58,7 +58,8 @@
             <div class="textBox">
                 <div class="description">
                     <h3>Projekt 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, tempora. Laboriosam quidem unde blanditiis qui aperiam consectetur, quae enim cumque repellendus, doloremque officia culpa ipsa neque obcaecati velit repudiandae. Sunt.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, tempora. Laboriosam quidem unde blanditiis qui aperiam consectetur, quae enim cumque repellendus, doloremque officia culpa ipsa neque obcaecati velit repudiandae. Sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est eos odit incidunt laudantium enim, aperiam, consequatur ullam inventore cum earum fugit. Iure ut suscipit odio natus autem quam assumenda!Lor
+                    </p>
                 </div>
                 <div class="buttonBox">
                     <button>Demo</button>
@@ -80,22 +81,19 @@
         </section>
     </section>
     <section id='contact'>
-        <h2>Kontakt</h2>
         <div>
+            <h2>Kontakt</h2>
             <form action="" class="form">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <input type="text">
-                <label for=""></label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+                <label for="title">Tytuł wiadomości:</label>
+                <input type="text" id="title">
+                <label for="text">Treść wiadomości:</label>
+                <textarea name="" id="text" cols="30" rows="10"></textarea>
                 <submit>Wyślij wiadomość</submit>
             </form>
-            <figure>
-                <img src="" alt="">
-                <figcation></figcation>
-            </figure>
         </div>
+        <img src="./assets/images/florian-klauer-mk7D-4UCfmg-unsplash.jpg" alt="" id="contactImg">
     </section>
     <footer></footer>
 </body>

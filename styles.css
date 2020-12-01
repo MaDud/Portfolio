@@ -2,7 +2,7 @@
     --titleFont: 'Petit Formal Script', cursive;
     --textFont: 'Roboto', sans-serif;
     --titleColor: rgb(66, 122, 93);
-    --lightBgColor:rgba(230, 210, 199, 0.8);
+    --lightBgColor:rgba(230, 210, 199, 0.9);
     --darkBgColor: rgba(98,116,106, 0.8);
     --hoverColor: rgb(224, 178, 77);
     --textColor: rgba(0, 0, 0, 0.623);
@@ -123,6 +123,62 @@ header h2 {
     margin: 1rem 0;
 }
 
+button, input, textarea, submit {
+    border: 1px solid var(--textColor);
+    opacity: 0.8;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    outline: none;
+    background-color: transparent;
+    border-radius: 2rem;
+    padding: 0.8rem;
+}
+
+textarea {
+    border-radius: 1.3rem;
+}
+
+button, submit {
+    transition: background-color 0.5s ease-in-out;
+    width: 8.5rem;
+}
+
+submit {
+    width: max-content;
+}
+
+button:hover, submit:hover {
+    color:#eeefee;
+    border: 1px solid var(--titleColor);
+    font-weight: bold;
+    background-color: var(--titleColor);
+}
+
+input, textarea, label {
+    width: 70%;
+    margin: 0.5rem auto;
+}
+
+input, textarea {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form > label {
+    text-align: left;
+}
+
+#menu {
+    display: none;
+}
+
 #projectsGallery {
     margin: 0;
     display: grid;
@@ -138,6 +194,25 @@ header h2 {
 
 #projectsGallery div:nth-of-type(3) {
     grid-area: 2/3/3/4
+}
+
+#contact {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    height: min-content;
+}
+
+#contact div {
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+#contactImg {
+    width: 40%;
+    height: 25rem;
 }
 
 .textBox {
@@ -222,10 +297,10 @@ header h2 {
     position: relative;
 }
 
-.buttonBox button {
+/* .buttonBox button {
     width: 10rem;
     height: 3rem;
-}
+} */
 
 .description {
     padding: 0 3rem;
@@ -370,10 +445,10 @@ header h2 {
         width: 100%;
     }
 
-    .buttonBox button {
+    /* .buttonBox button {
         width: 8rem;
         height: 2rem;
-    }
+    } */
 
     .description {
         width: 100%;
@@ -387,6 +462,46 @@ header h2 {
 
     * {
         font-size: 16px;
+    }
+
+   nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav:hover ul{
+        display: block;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        top: 100%;
+        background-color: #fff;
+        z-index: 100;
+        height: 100vh;
+    } 
+
+    nav:hover #menu i{
+        color: var(--hoverColor);
+    }
+    
+    nav ul > li {
+        border: none;
+        height: max-content;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    nav a {
+        height: max-content;
+        padding: 1rem 0;
+        box-sizing: border-box;
     }
 
     section {
@@ -419,9 +534,24 @@ header h2 {
        padding: 3rem 1rem;
     }
 
+    button {
+        width: 8rem;
+        max-width: 11rem;
+        padding: 0.8rem;
+    }
+
+    #menu {
+        display: inline;
+        padding: 0 2rem;
+    }
+
+    #menu i {
+        font-size: 1.5rem;
+    }
+
     #projectsGallery {
         grid-template-columns: 100%;
-        grid-template-rows: 20rem 18rem 20rem 18rem;
+        grid-template-rows: max-content 20rem max-content 20rem;
         grid-auto-flow: unset;
         grid-gap: 0;
     }
@@ -458,5 +588,9 @@ header h2 {
 
     .textBoxRight:hover.textBoxRight::after {
         left: auto;
+    }
+
+    .description, .buttonBox {
+        padding: 1rem 0;
     }
 }
