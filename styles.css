@@ -32,7 +32,7 @@ h1, h2 {
 
 h2 {
     font-size: 1.8rem;
-    margin: 2rem 0.5rem;
+    padding: 2rem 0.5rem;
 }
 
 p {
@@ -121,6 +121,7 @@ header h2 {
     font-size: 2rem;
     font-weight: lighter;
     margin: 1rem 0;
+    padding: 0 0;
 }
 
 button, input, textarea, submit {
@@ -155,8 +156,8 @@ button:hover, submit:hover {
 }
 
 input, textarea, label {
-    width: 70%;
-    margin: 0.5rem auto;
+    width: 80%;
+    margin: 0.3rem auto;
 }
 
 input, textarea {
@@ -201,18 +202,25 @@ form > label {
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    height: min-content;
+    height: 80vh;
 }
 
 #contact div {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    flex: 1
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+#contact h2 {
+    text-align: center;
+    margin: 0 0;
 }
 
 #contactImg {
-    width: 40%;
-    height: 25rem;
+    width: 50%;
+    height: 100%;
 }
 
 .textBox {
