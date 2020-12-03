@@ -11,7 +11,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-size: 24px;
+    font-size: 20px;
     font-family: var(--textFont);
     color: var(--textColor);
 }
@@ -40,7 +40,7 @@ p {
 }
 
 section {
-    margin: 0 15%;
+    margin: 0 20%;
 }
 
 section:nth-of-type(odd) h2 {
@@ -305,13 +305,8 @@ form > label {
     position: relative;
 }
 
-/* .buttonBox button {
-    width: 10rem;
-    height: 3rem;
-} */
-
 .description {
-    padding: 0 3rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     width: 45%;
@@ -351,12 +346,12 @@ form > label {
 @media (max-width: 1500px) {
 
     * {
-        font-size: 20px;
+        font-size: 18px;
     }
-
+/* 
     section {
-        margin: 0 10%;
-    }
+        margin: 0 15%;
+    } */
 
     header {
         width: 80%;
