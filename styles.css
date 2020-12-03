@@ -198,29 +198,34 @@ form > label {
 }
 
 #contact {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    height: 80vh;
-}
-
-#contact div {
-    height: 100%;
+    width: 40%;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 80vh;
+    position: relative
 }
 
 #contact h2 {
-    text-align: center;
+    padding-right: 30%;
+    display: inline-block;
     margin: 0 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 2rem auto;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--hoverColor);
 }
 
 #contactImg {
-    width: 50%;
-    height: 100%;
+    position: absolute;
+    height: 150%;
+    bottom:-3rem;
+    left: -100%;
+    opacity: 0.9;
+    z-index: -1
 }
 
 .textBox {
