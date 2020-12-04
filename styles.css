@@ -126,7 +126,6 @@ header h2 {
 
 button, input, textarea, submit {
     border: 1px solid var(--textColor);
-    opacity: 0.8;
     text-transform: uppercase;
     font-size: 0.8rem;
     outline: none;
@@ -142,10 +141,12 @@ textarea {
 button, submit {
     transition: background-color 0.5s ease-in-out;
     width: 8.5rem;
+    opacity: 0.8;
 }
 
 submit {
     width: max-content;
+    margin: 1rem auto;
 }
 
 button:hover, submit:hover {
@@ -162,6 +163,10 @@ input, textarea, label {
 
 input, textarea {
     box-sizing: border-box;
+}
+
+label {
+    font-weight: bolder;
 }
 
 form {
@@ -198,29 +203,33 @@ form > label {
 }
 
 #contact {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    height: 80vh;
-}
-
-#contact div {
-    height: 100%;
+    width: 40%;
+    margin-left: auto;
     display: flex;
     flex-direction: column;
-    flex: 1;
-    justify-content: space-evenly;
+    justify-content: center;
+    position: relative
 }
 
 #contact h2 {
-    text-align: center;
+    padding-right: 30%;
+    display: inline-block;
     margin: 0 0;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 2rem auto;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--hoverColor);
 }
 
 #contactImg {
-    width: 50%;
-    height: 100%;
+    position: absolute;
+    height: 90%;
+    bottom:-2rem;
+    left: -28rem;
+    opacity: 0.85;
+    z-index: -1
 }
 
 .textBox {
@@ -462,6 +471,10 @@ form > label {
     #project2 {
         background-image: url('./assets/images/tran-mau-tri-tam-vGsf7HSWOU8-unsplash-800w.jpg');
     }
+
+    #contact {
+        width: 50%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -568,6 +581,18 @@ form > label {
     
     #projectsGallery div:nth-of-type(3) {
         grid-area: auto
+    }
+
+    #contact {
+        width: 100%;
+    }
+
+    #contactImg {
+        height: 90%;
+        bottom:-2rem;
+        left: 5.5rem;
+        opacity: 0.85;
+        z-index: -1
     }
 
     /*arrow */
