@@ -3,7 +3,7 @@
     --textFont: 'Roboto', sans-serif;
     --titleColor: rgb(66, 122, 93);
     --lightBgColor:rgba(230, 210, 199, 0.9);
-    --darkBgColor: rgba(98,116,106, 0.8);
+    --darkBgColor: rgba(98,116,106, 0.95);
     --hoverColor: rgb(224, 178, 77);
     --textColor: rgba(0, 0, 0, 0.623);
 }
@@ -241,6 +241,44 @@ form > label {
     align-items: center;
     z-index: 10;
     cursor: pointer;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#about div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img{
+    width: 80%;
+    opacity: 0.9;
+    position: relative;
+}
+
+#about div::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    background-color: var(--darkBgColor);
+    left: 0;
+    z-index: -1;
+}
+
+#about article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 2rem 0;
+    box-sizing: border-box;
 }
 
 .textBoxRight.textBox {
@@ -588,11 +626,7 @@ form > label {
     }
 
     #contactImg {
-        height: 90%;
-        bottom:-2rem;
-        left: 5.5rem;
-        opacity: 0.85;
-        z-index: -1
+        display: none;
     }
 
     /*arrow */
