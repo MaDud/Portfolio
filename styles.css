@@ -191,9 +191,36 @@ form > label {
 }
 
 footer {
-    height: 6rem;
+    /* height: 6rem; */
     background-color: var(--darkBgColor);
     margin-top: 2rem;
+    padding: 3rem 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #eeefee;
+}
+
+footer section {
+    margin: 0
+}
+
+footer section:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer section:last-child i {
+    font-size: 2rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+footer section:last-child i:hover {
+    color: var(--hoverColor)
 }
 
 #menu {
