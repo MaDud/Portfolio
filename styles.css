@@ -298,6 +298,7 @@ footer section:last-child i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 #about img{
@@ -320,6 +321,7 @@ footer section:last-child i:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 50%;
 }
 
 #about h2 {
