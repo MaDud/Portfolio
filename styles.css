@@ -3,8 +3,8 @@
     --textFont: 'Roboto', sans-serif;
     --titleColor: rgb(66, 122, 93);
     --lightBgColor:rgba(230, 210, 199, 0.9);
-    --darkBgColor: rgba(98,116,106, 0.95);
-    --hoverColor: rgb(224, 178, 77);
+    --darkBgColor: rgb(71, 98, 83);
+    --hoverColor: rgb(213, 160, 48);
     --textColor: rgba(0, 0, 0, 0.623);
 }
 
@@ -149,15 +149,16 @@ textarea {
 button, input[type="submit"] {
     transition: background-color 0.5s ease-in-out;
     width: 8.5rem;
-    opacity: 0.8;
+    /* opacity: 0.8; */
     text-transform: uppercase;
 }
 
 button:hover, input[type="submit"]:hover {
-    color:#eeefee;
+    color:#FAFAFA;
     border: 1px solid var(--titleColor);
     font-weight: bold;
     background-color: var(--titleColor);
+    opacity: 0.9
 }
 
 input, textarea, label {
@@ -199,7 +200,7 @@ footer {
 }
 
 footer p {
-    color: #eeefee;
+    color: #FAFAFA;
 }
 
 footer section {
@@ -220,6 +221,10 @@ footer section:last-child i {
 
 footer section:last-child i:hover {
     color: var(--hoverColor)
+}
+
+footer a {
+    color: var(--lightBgColor)
 }
 
 #menu {
