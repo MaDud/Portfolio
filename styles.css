@@ -750,7 +750,8 @@ footer section:last-child i:hover {
     }
     
     #about div {
-        margin-top: 2rem
+        margin-top: 2rem;
+        width: 100%;
     }
     
     #about img{
@@ -765,6 +766,7 @@ footer section:last-child i:hover {
     
     #about article {
         order: -1;
+        width: 100%;
     }
 
     #about article>p, #about article>ul, #about article>h3 {
