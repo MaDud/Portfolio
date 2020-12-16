@@ -3,8 +3,8 @@
     --textFont: 'Roboto', sans-serif;
     --titleColor: rgb(66, 122, 93);
     --lightBgColor:rgba(230, 210, 199, 0.9);
-    --darkBgColor: rgb(71, 98, 83);
-    --hoverColor: rgb(213, 160, 48);
+    --darkBgColor: #355F3A;
+    --hoverColor: #BE8919;
     --textColor: rgba(0, 0, 0, 0.623);
 }
 
