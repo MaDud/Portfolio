@@ -224,7 +224,7 @@ footer section:last-child i:hover {
 }
 
 footer a {
-    color: var(--lightBgColor)
+    font-weight: bold;
 }
 
 #menu {
