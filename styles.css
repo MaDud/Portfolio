@@ -191,7 +191,6 @@ form > label {
 }
 
 footer {
-    /* height: 6rem; */
     background-color: var(--darkBgColor);
     margin-top: 2rem;
     padding: 3rem 20%;
@@ -497,6 +496,10 @@ footer section:last-child i:hover {
         font-size: 1.5rem;
     }
 
+    footer {
+        padding: 3rem 5%;
+    }
+
     .textBox {
         width: 100%;
         flex-direction: column;
@@ -669,6 +672,22 @@ footer section:last-child i:hover {
         width: 8rem;
         max-width: 11rem;
         padding: 0.8rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer section:first-child {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    footer section:last-child {
+        order: -1;
+        justify-content: flex-end;
+        padding: 0.5rem 0;
     }
 
     #menu {
