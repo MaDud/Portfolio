@@ -313,7 +313,7 @@ footer section:last-child i:hover {
     width: 80%;
     height: 90%;
     background-color: var(--darkBgColor);
-    left: 0;
+    left: 1rem;
     z-index: -1;
 }
 
