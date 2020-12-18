@@ -193,7 +193,6 @@ form > label {
 
 footer {
     background-color: var(--darkBgColor);
-    margin-top: 2rem;
     padding: 3rem 20%;
     display: flex;
     justify-content: space-between;
@@ -273,28 +272,37 @@ footer a>i {
 }
 
 #contact {
-    width: 40%;
-    margin-left: auto;
+    /* width: 40%; */
+    /* margin-left: auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative
+    position: relative;
+    margin-top: 2rem;
+}
+#contact div {
+    width: 60%;
+    align-self: center;
+    background-color: var(--lightBgColor);
+    margin: 3rem auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 4rem;
 }
 
-#contact h2 {
-    display: inline-block;
-    width: 100%;
+#contact div h2 {
+    /* display: inline-block;
+    width: 100%; */
     text-align: center;
     padding: 0.5rem 0;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 #contactImg {
     position: absolute;
-    height: 90%;
-    bottom:-2rem;
-    left: -28rem;
-    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
     z-index: -1
 }
 
