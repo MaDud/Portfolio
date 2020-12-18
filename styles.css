@@ -2,9 +2,10 @@
     --titleFont: 'Petit Formal Script', cursive;
     --textFont: 'Roboto', sans-serif;
     --titleColor: rgb(66, 122, 93);
+    --subTitleColor:  rgb(190, 137, 25);
     --lightBgColor:rgba(230, 210, 199, 0.9);
-    --darkBgColor: #355F3A;
-    --hoverColor: #BE8919;
+    --darkBgColor:rgb(53, 95, 58);
+    --hoverColor: rgb(190, 137, 25);
     --textColor: rgba(0, 0, 0, 0.623);
 }
 
@@ -51,7 +52,7 @@ section {
 }
 
 section:nth-of-type(odd) h2 {
-    color: var(--hoverColor)
+    color: var(--subTitleColor)
 }
 
 nav {
@@ -149,7 +150,6 @@ textarea {
 button, input[type="submit"] {
     transition: background-color 0.5s ease-in-out;
     width: 8.5rem;
-    /* opacity: 0.8; */
     text-transform: uppercase;
 }
 
@@ -225,6 +225,11 @@ footer section:last-child i:hover {
 
 footer a {
     font-weight: bold;
+    color: #FAFAFA;
+}
+
+footer a>i {
+    color: #FAFAFA;
 }
 
 #menu {
@@ -474,11 +479,6 @@ footer a {
     * {
         font-size: 18px;
     }
-/* 
-    section {
-        margin: 0 15%;
-    } */
-
     header {
         width: 80%;
     }
