@@ -362,6 +362,18 @@ footer a>i {
     padding: 0.5rem 0;
 }
 
+#projects > h2 {
+    margin-top: 0
+}
+
+#project1 {
+    background-image: url('./assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash-1200w.jpg');
+}
+
+#project2 {
+    background-image: url('./assets/images/tran-mau-tri-tam-vGsf7HSWOU8-unsplash-1200w.jpg');
+}
+
 .textBox {
     position: relative;
     width: 222%;
@@ -458,14 +470,6 @@ footer a>i {
 .projectClipping {
     background-size: cover;
     filter: opacity(0.9);
-}
-
-#project1 {
-    background-image: url('./assets/images/nick-morrison-FHnnjk1Yj7Y-unsplash-1200w.jpg');
-}
-
-#project2 {
-    background-image: url('./assets/images/tran-mau-tri-tam-vGsf7HSWOU8-unsplash-1200w.jpg');
 }
 
 @keyframes changeVisibility {
