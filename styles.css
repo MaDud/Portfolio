@@ -151,14 +151,16 @@ button, input[type="submit"] {
     transition: background-color 0.5s ease-in-out;
     width: 8.5rem;
     text-transform: uppercase;
-}
-
-button:hover, input[type="submit"]:hover {
     color:#FAFAFA;
     border: 1px solid var(--titleColor);
     font-weight: bold;
     background-color: var(--titleColor);
-    opacity: 0.9
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    opacity: 0.75
 }
 
 input, textarea, label {
