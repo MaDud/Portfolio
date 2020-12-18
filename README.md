@@ -1,7 +1,7 @@
 # Portfolio
 This page was created as one of projects for .CoderCamp (https://coderscamp.edu.pl/). 
 Main aim of this project was to present my abilities in area od HTML & CSS with no use of external frameworks or JavaScript.
-It is base for my portfolio w3bsite which I am going to update along with expanding my skills in the area of programming.
+It is base for my portfolio website which I am going to update along with expanding my skills in the area of programming.
 
 ## Scope:
 - Box-model
