@@ -237,6 +237,66 @@ footer a>i {
     display: none;
 }
 
+#about {
+    display: flex;
+    justify-content: space-between;
+}
+
+#about div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+#about img:first-child, #about img:last-child {
+    width: 75%;
+    opacity: 0.9;
+    position: relative;
+}
+
+#about img:last-child {
+    display: none;
+}
+
+#about div::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 90%;
+    background-color: var(--darkBgColor);
+    left: 1rem;
+    z-index: -1;
+}
+
+#about article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+#about h2 {
+    width: 100%;
+    margin: 0 auto 2rem auto;
+    box-sizing: border-box;
+}
+
+#about h3 {
+    padding: 2rem 0 1rem 0;
+}
+
+#about ul {
+    list-style-position: inside;
+    list-style-type: circle;
+    display: inline;
+}
+
+#about ul>li {
+    padding: 0.5rem 0;
+}
+
 #technologies div {
     display: flex;
     justify-content: space-between;
@@ -303,62 +363,6 @@ footer a>i {
     height: 100%;
     opacity: 0.8;
     z-index: -1
-}
-
-#about {
-    display: flex;
-    justify-content: space-between;
-}
-
-#about div {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-}
-
-#about img{
-    width: 80%;
-    opacity: 0.9;
-    position: relative;
-}
-
-#about div::after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 90%;
-    background-color: var(--darkBgColor);
-    left: 1rem;
-    z-index: -1;
-}
-
-#about article {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
-}
-
-#about h2 {
-    width: 100%;
-    margin: 0 auto 2rem auto;
-    box-sizing: border-box;
-}
-
-#about h3 {
-    padding: 2rem 0 1rem 0;
-}
-
-#about ul {
-    list-style-position: inside;
-    list-style-type: circle;
-    display: inline;
-}
-
-#about ul>li {
-    padding: 0.5rem 0;
 }
 
 #projects > h2 {
@@ -777,8 +781,13 @@ footer a>i {
         margin-top: 2rem;
         width: 100%;
     }
+
+    #about img:first-child {
+        display: none;
+    }
     
-    #about img{
+    #about img:last-child {
+        display: block;
         width: 80%;
     }
     
