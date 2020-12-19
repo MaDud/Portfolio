@@ -1,7 +1,7 @@
 # Portfolio
 This page was created as one of projects for .CoderCamp (https://coderscamp.edu.pl/). 
 The main aim of this project was to present my abilities in area od HTML & CSS with no use of external frameworks or JavaScript.
-It is base for my portfolio website which I am going to update along with expanding my skills in the area of programming.
+The webpage was created based on desktop-first approach.
 
 ## Scope:
 - Box-model
@@ -21,10 +21,14 @@ It is base for my portfolio website which I am going to update along with expand
 ## Demo:
 Open this path to view it: https://madud.github.io/portfolio/
 
+## Status:
+### in progress
+It is base for my portfolio website which I am going to update along with expanding my skills in the area of programming.
+
 ## ToDo:
 - Sending contact form on server
 - Add JavaScript or TypeSript
-- Add own projects
+- Add own projects & add links for projects
 
 
 
