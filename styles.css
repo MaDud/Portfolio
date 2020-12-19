@@ -208,6 +208,10 @@ footer section {
     margin: 0
 }
 
+footer section:first-child a {
+    font-style: italic;
+}
+
 footer section:last-child {
     flex: 1;
     display: flex;
@@ -314,6 +318,30 @@ footer a>i {
 #technologies div div>i {
     font-size: 6rem;
     padding-bottom: 1rem;
+}
+
+#technologies div div:hover {
+    opacity: 0.8;
+}
+
+#technologies div div:hover .fa-html5 {
+    color: hsl(12, 78%, 52%);
+}
+
+#technologies div div:hover .fa-css3-alt {
+    color: hsl(228, 73%, 51%);
+}
+
+#technologies div div:hover .fa-js {
+    color: hsl(53, 87%, 53%);
+}
+
+#technologies div div:hover .fa-react {
+    color: hsl(195, 89%, 72%);
+}
+
+#technologies div div:hover .fa-sass {
+    color: hsl(332, 61%, 59%);
 }
 
 #projectsGallery {
